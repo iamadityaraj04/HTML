@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+
+        /* work on every p inside div */
+        /* div p{
+            background-color: blueviolet;
+            color: aquamarine;
+        } */
+
+        /* works on p which is inside li and li is inside div */
+        div li p{
+            background-color: blueviolet;
+            color: aquamarine;
+        }
+        
+        /* works on only p which is direct child of div */
+        /* div > p{
+            background-color: blueviolet;
+            color: aquamarine;
+        } */
+
+        /* works on paragraph whose sibling is div */
+        /* div + p{
+            background-color: blueviolet;
+            color: aquamarine;
+        } */
+    </style>
+</head>
+<body>
+    <h1>More on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="items">
+                    <p>this is a paragraph whose parent is li</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p>this is another paragraph whose parent is div</p>
+        </div>
+        <p>this is another paragraph whose sibling is div</p>
+    </div>
+    <p>this is another paragraph outside div and sibling of div</p>
+</body>
+</html>

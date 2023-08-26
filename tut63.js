@@ -1,0 +1,71 @@
+// console.log("hello world");
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+  res.end(
+  `<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Padding and Margin</title>
+      <style>
+          /*  "*" is used for default styling for all elements */
+          *{
+              box-sizing: border-box;
+          }
+          body{
+              background-color: rgb(246 218 247);
+          }
+          .abc{
+              background-color: rgb(238 255 253);
+              border: 5px solid darkmagenta;
+              border-radius: 15px;
+             
+              
+              padding: 30px;
+              /* we can also give diff. padding in all the sides as shown below */
+              /* padding-top: 30px;
+              padding-left: 30px;
+              padding-bottom: 30px;
+              padding-right: 30px; */
+  
+              /* all above four line can also be in one line as below  order(top right bottom left) */
+              /* padding: 30px 10px 30px 10px; */
+  
+              /* padding can be set as (top&bottom   left&right) as shown below */
+              /* padding: 100px 30px; */
+  
+              /* margin can be also given in all diff. ways as padding */
+              margin: 10px;
+          }
+      </style>
+  </head>
+  <body>
+      <div class="abc">
+          <h2>This is a paragraph.</h2>
+          <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur similique quibusdam est aperiam voluptate a obcaecati iure quas dignissimos error, placeat necessitatibus tempora amet ullam magni repudiandae architecto minima voluptates.</p>
+      </div>
+      <div class="abc">
+          <h2>This is a paragraph.</h2>
+          <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur similique quibusdam est aperiam voluptate a obcaecati iure quas dignissimos error, placeat necessitatibus tempora amet ullam magni repudiandae architecto minima voluptates.</p>
+      </div>
+      <div class="abc">
+          <h2>This is a paragraph.</h2>
+          <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur similique quibusdam est aperiam voluptate a obcaecati iure quas dignissimos error, placeat necessitatibus tempora amet ullam magni repudiandae architecto minima voluptates.</p>
+      </div>
+  </body>
+  </html>`
+    
+  );
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});

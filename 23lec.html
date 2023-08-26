@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Controller</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app>
+
+    <!--number filter -->
+    Enter Amount : <input type="number" ng-model="amount"><br/>
+    amount | number = {{amount | number}}<br/>
+    amount | number:2 = {{amount | number:2}}<br/>
+    amount | number:5 = {{amount | number:5}}<br/>
+    amount | number = <span ng-bind="amount | number:8"></span><br/>
+
+
+    <!-- upercase - lowecase filter -->
+    <h1>Upper case and lowercase filter</h1>
+    <div ng-init="person.firstName='Vishnu'; person.lastName='Kumar'">
+        LOWER case:{{person.lastName | lowecase}}
+        UPPER case:{{person.lastFirst | upercase}}
+
+    </div>
+   
+
+
+</script>
+</body>
+</html>

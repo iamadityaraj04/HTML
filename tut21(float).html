@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Alignment</title>
+    <style>
+    
+        .container{
+            width: 900px;
+            border: 6px solid rgb(4, 150, 69);
+            border-radius: 5px;
+            margin: auto;
+            background-color: bisque;
+        }
+        .item{
+            border: 3px solid brown;
+            border-radius: 5px;
+            padding: 12px 10px;
+            margin: 12px 3px;
+            background: rgb(224, 211, 211);
+        }
+
+        /* float will float that box to left */
+        #fruit{
+            float: left;
+            width: 46%;
+        }
+        #computer{
+            float: left;
+            width: 46%;
+        }
+
+        /* clear is used for not overlapping  */
+        #stationary{
+            clear: both;
+        }
+        p{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h1,h3{
+            text-align: center;
+            font-family:  Arial;
+        }
+        h1{
+            color: rgb(129, 93, 93);
+        }
+        h3{
+            color: rgb(29, 124, 141);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WELCOME TO STORE</h1>
+        <div id="fruit" class="item">
+            <h3>Fruit</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio amet, impedit voluptatibus accusantium inventore fugit consequatur dignissimos id dolores repellendus officia, autem non dicta totam nobis facere! Nihil, vel iusto.</p>
+        </div>
+        
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio amet, impedit voluptatibus accusantium inventore fugit consequatur dignissimos id dolores repellendus officia, autem non dicta totam nobis facere! Nihil, vel iusto.</p>
+        </div>
+        
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio amet, impedit voluptatibus accusantium inventore fugit consequatur dignissimos id dolores repellendus officia, autem non dicta totam nobis facere! Nihil, vel iusto.</p>
+        </div>
+
+        <div id="college" class="item">
+            <h3>College</h3>
+            <p id="collegepara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio amet, impedit voluptatibus accusantium inventore fugit consequatur dignissimos id dolores repellendus officia, autem non dicta totam nobis facere! Nihil, vel iusto.</p>
+        </div>
+    </div>
+</body>
+</html>

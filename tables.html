@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Tables
+        </title>
+
+        <style>
+            body{
+                background-color: lightpink;
+            }
+            table{
+                width: 50%;
+            }
+            table,td,th{
+                border: 1px solid black;
+                border-collapse: collapse;
+                }
+            td{
+                text-align: right;
+            }
+            th{
+                padding: 5x;
+                background-color: lightgray;
+            }
+            td{
+                padding: 10px;
+                background-color: aqua;
+            }    
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Reg No. </th>
+            </tr>
+            <tr>
+                <td>Aditya</td>
+                <td>Raj</td>
+                <td>11911045</td>
+            </tr>
+            <tr>
+                <td>Dharmendra</td>
+                <td>Kumar</td>
+                <td>11911043</td>
+            </tr>
+            <tr>
+                <td>Raj</td>
+                <td>Ankit</td>
+                <td>11911987</td>
+            </tr>
+            <tr>
+                <td>Utkarsh</td>
+                <td>Shahi</td>
+                <td>11911465</td>
+            </tr>
+            <tr>
+                <td>Aayush</td>
+                <td>Gupta</td>
+                <td>11911938</td>
+            </tr>
+        </table>
+        <br><br><br>
+        
+        <!--colspan-->
+        <p><u><b>Colspan</b></u></p>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Languages known</th>
+                <th>Reg No. </th>
+            </tr>
+            <tr>
+                <td>Aditya Raj</td>
+                <td>Hindi</td>
+                <td>English</td>
+                <td>11911045</td>
+            </tr>
+            <tr>
+                <td>Utkarsh</td>
+                <td>Spanish</td>
+                <td>Hindi</td>
+                <td>11911089</td>
+            </tr>
+            <tr>
+                <td>Aayush</td>
+                <td>English</td>
+                <td>Hindi</td>
+                <td>11911035</td>
+            </tr>
+            <tr>
+                <td>Ranvijay</td>
+                <td>Hindi</td>
+                <td>Bhojpuri</td>
+                <td>11911099</td>
+            </tr>
+        </table>
+        <br><br><br>
+
+        <!--rowspan-->
+        <p><b><u>Rowspan</u></b></p>
+        <table>
+            <tr>
+                <th>Name</th>
+                <td>Aditya Raj</td>
+                <td>Utkarsh</td>
+                <td>Aayush</td>
+                <td>Ranvijay</td>
+            </tr>
+            <tr>
+                <th>Reg No. </th>
+                <td>11911045</td>
+                <td>11911089</td>
+                <td>11911035</td>
+                <td>11911099</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Languages known</th>
+                <td>Hindi</td>
+                <td>Spanish</td>
+                <td>English</td>
+                <td>Hindi</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>Hindi</td>
+                <td>Hindi</td>
+                <td>Bhopuri</td>
+            </tr>
+
+        </table>
+    </body>
+</html>

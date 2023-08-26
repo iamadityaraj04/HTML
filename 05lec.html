@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table td{
+            text-align: center;
+            border: 5px solid skyblue;
+            padding: 20px;
+        }
+        table td:hover{
+            background-color: royalblue; 
+        }
+        table td:hover .img {
+            border-color:yellow ;   
+        }
+        table img{
+            margin: 20px auto;
+            border: 20px double red;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <img src="img1.jpg" alt="" width="250px" height="250px">
+            </td>
+            <td>
+                <img src="img2.jpg" alt="" width="250px" height="250px" class="img">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img3.jpg" alt="" width="250px" height="250px" class="img">
+            </td>
+            <td>
+                <img src="bg.jpg" alt="" width="250px" height="250px" >
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

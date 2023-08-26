@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Event</title>
+</head>
+<body>
+    <!-- <img src="img1.jpg" alt="" width="200px" height="200px" id="image" onmouseover="big()" onmouseout="small()"> -->
+    <button id="btn" onmouseover="mouseover()" onmouseout="mouseout()">Click Here</button>
+    <script>
+        // function big() {
+        //     document.getElementById("image").style.height="500px";
+        //     document.getElementById("image").style.width="500px";
+        //     document.getElementById("image").style.border="6px";
+        //     document.getElementById("image").style.borderRadius="30px";
+        
+        // }
+        // function small() {
+        //     document.getElementById("image").style.width="200px";
+        //     document.getElementById("image").style.height="200px";
+        //     document.getElementById("image").style.border="none";
+        //     document.getElementById("image").style.borderRadius="none";
+            
+        // }
+
+        function mouseover() {
+            document.getElementById("btn").style.background="red";
+            document.getElementById("btn").style.color="yellow";
+            
+        }
+        function mouseout() {
+            document.getElementById("btn").style.background="blue";
+            document.getElementById("btn").style.color="white";
+           
+        }
+    </script>
+</body>
+</html>

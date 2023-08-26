@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    
+
+    <script>
+        //functions
+        let name1="Aditya";
+        let add="Dhanbad"
+        let name2="Shubham";
+        let add2="Aara"
+        let name3="Chandu";
+
+        function greet(name, add=" Address Not Provided"){
+            console.log("Hello! "+name);
+            console.log(add);
+        }
+ 
+        greet(name1,add);
+        greet(name2,add2);
+        greet(name3);
+        
+
+
+
+        function compare(a,b){
+            if(a>b){
+                console.log(a+" is greater than "+b);
+            }
+            else if(a==b){
+                console.log(a+" is equal to "+b);
+            }
+            else{
+                console.log(a+" is smaller than "+b);
+            }
+        }
+        compare(10,90);
+        compare(12,2);
+        compare(30,30);
+    </script>
+</body>
+</html>

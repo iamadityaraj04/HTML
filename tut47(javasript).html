@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorials</title>
+        <script>
+            console.log('Hello World');
+            
+            //operetors 
+            var a= 5;
+            var b= "Aditya";
+            var c= 3;
+            console.log(a);
+            console.log(b);
+            console.log(-a);
+            console.log(" a + c is : " + (a+c) );
+            console.log("value of a++: " + (a++));
+            console.log("value of ++a: " + (++a));
+
+            // string and string methods
+            var string= "I'm";
+            var name=" Aditya Raj";
+            var age =" I'm 19 years old."
+            console.log(string);
+            // "+" used to concatinate the strings
+            console.log(string + name + age);
+
+            // to take details from above declared variable
+            var temp=`My name is ${name} `;
+            console.log(temp);
+            
+            //to calculate the length 
+            var len=name.length;
+            console.log(`Length of name is: ${len}`);
+
+            // inisilizing string using string constructor
+            var x = new String("this");
+            console.log(x);
+
+            // inserting some content using javascript
+            // document.getElementById('intro').innerHTML = '<h1>My name is Aditya Raj</h1>'
+
+            // first occurance of a substring from given string\
+            var str= "This is string";
+            var index= str.indexOf("is");
+            console.log(index);
+
+            // last occurance of a substring from given string
+            //we can directly write 'index' if used var with same variable name earlier in the program
+            index= str.lastIndexOf("is");
+            console.log(index);
+
+            // for slicing 
+            var slice = str.slice(5,9);
+            console.log(slice);
+
+            // gives the same output as slice but slice can take negative value but substring cannot
+            var substring=str.substring(5,9);
+            console.log(substring);
+
+            //here 9 is the length of the sting want to slice
+            var substr=str.substr(5,9);
+            console.log(substr);
+            
+            //for repacing something
+            var replaced=str.replace('string', 'Aditya')
+            console.log(str);    
+            console.log(replaced); 
+
+            // for printing in lowercase
+            console.log(str.toLocaleUpperCase());
+            console.log(str.toLocaleLowerCase());
+
+            //to trim the string , it erases whitespaces from starting and ending
+            var strWithWhiteSpaces=('            this   contains whitespces          ');
+            console.log(strWithWhiteSpaces)
+            console.log(strWithWhiteSpaces.trim());
+            
+            //for finding char at given index
+            console.log(str.charAt(3));
+
+            //for finding code of char at given index
+            console.log(str.charCodeAt(3));
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div id="intro"></div>
+        <div class="row">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, natus eius voluptas minima alias quisquam non modi, facere perspiciatis animi recusandae facilis dignissimos inventore explicabo ea amet rem vel nulla id sint aspernatur odit! Laudantium officiis iusto aut blanditiis dicta tempora similique accusamus numquam nam odit cum, molestias quidem eius consequatur. Iure, voluptatum nisi atque eligendi sapiente cupiditate dignissimos laborum! Accusantium ipsam earum, quidem recusandae nemo iusto similique mollitia ab maxime minima iure, eligendi suscipit fuga, est repellat fugiat doloremque incidunt cupiditate placeat id pariatur. Ipsam vitae iusto voluptatem fugiat! Eveniet aliquid maiores beatae iure natus deleniti aperiam culpa odit. 
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set timeout and clear time out</title>
+</head>
+<body>
+    <div class="container">
+        This page is for setTimeout and clearTimeout <br>
+        <span id="time"></span>
+    </div>
+
+    <script>
+        console.log("This is example of setTimeout");
+        function greet(){
+            console.log("Hello Aditya! Good Morning....");
+        }
+        // setTimeout
+        setTimeout(greet, 2000);
+
+        //it will also give unique id of setTimeout
+        // timeOutId=setTimeout(greet, 2000);
+        // console.log(timeOut);
+
+        // cleartimeout: used to clear setTimeout
+        // clearTimeout(timeOut);
+
+        // setInterval: runs function in given iterval of time
+        //setInterval(greet, 2000);
+
+        // it will also give unique id of setInterval
+        // intervalId=setInterval(greet, 2000);
+        // console.log(intervalId);
+
+        // clearInterval: used to clear setInterval
+        // clearInterval(intervalId);
+
+    </script>
+</body>
+</html>

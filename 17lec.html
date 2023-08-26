@@ -1,0 +1,100 @@
+<!-- jquery -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Hi! Aditya</h1>
+    <h2>Hi! Aditya</h2>
+    <input type="text" id="input"><br><br>
+    <input type="text" id="input1">
+    <button id="set">Set Value</button>
+    <button id="clear">Clear Value</button> <br> <br>
+    <input type="text" class="input">
+    <input type="text" class="input">
+    
+    
+    
+    <script>
+        $(document).ready(function(){
+            // first way
+            $('h1').css('color','red');
+            $('h1').css('font-family','Arial');
+
+            // second way
+            $('h2').css({
+                'color':'red', 
+                'font-family': 'Arial'
+            })
+        })
+        // $(document).ready(function(){
+        //     $('#input').css({
+        //         'boder-radius':'10px'        
+        //     })
+        //     $("#input").mouseover(function(){
+        //         $(this).css({
+        //             'background-color':'lightgreen',
+        //         }) 
+        //     })
+        //     $("#input").mouseout(function(){
+        //         $(this).css({
+        //             'background-color':'red',   
+        //         }) 
+        //     })
+        // })
+
+
+        $(document).ready(function(){
+            $('#input').on({
+                mouseover:function(){
+                    $(this).css({
+                    'background-color':'lightgreen',
+                    }) 
+                },
+                mouseout:function(){
+                    $(this).css({
+                    'background-color':'red',
+                    }) 
+                },
+                dblclick:function(){
+                    $(this).css({
+                    'background-color':'white',
+                    })
+                }
+            })
+        })
+
+        $('#set').click(function(){
+            $('#input1').val('hi! Aditya');
+        })
+        $('#clear').click(function(){
+            $('#input1').val('');
+        })
+
+       
+            $('.input').on({
+                keyup:function(){
+                    if($('.input').val('')){
+                        $(this).css('backgroung-color', 'crimson')
+                    } 
+                    else{
+                        $(this).css('backgroung-color', 'lawngreen')
+                    }  
+                }
+                blur:function(){
+                    
+                }
+
+            )}
+
+
+
+    </script>
+</body>
+</html>

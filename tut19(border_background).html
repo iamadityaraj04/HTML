@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border and radius</title>
+    <style>
+        #firstpara{
+            background-color: aqua;
+            height: 300px;
+            width: 300px;
+            border-width: 5px;
+            border-style: solid;
+            border-radius: 5px;
+            border-color: blue; /* by default border color is black*/
+            /* border: 5px solid brown;  above three lines can also written in single line*/ 
+        }
+        #secondpara{
+            background-color: aqua;
+            height: 30px;
+            width: 300px;
+            border-top: 2px solid rgb(119, 69, 4);
+            border-left: 2px dashed rgb(93, 241, 88);
+            border-right: 2px dotted rgb(150, 111, 255);
+            border-bottom: 2px solid darkred;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        #thirdpara{
+            height: 500px;
+            width: 500px;
+            border: 5px solid;
+            background-image: url('https://www.netcetra.com/images/howto_images/picmonkey-logo.jpg');
+            background-repeat: no-repeat;/* use no-repeat otherwise img will repeat in given dimension
+            repeat-x repeat-y can be used to repeat in x-axis and y-axis respectively*/
+            
+            /*background-position: bottom left;
+            background-position: bottom right;
+            background-position: top left;
+            background-position: top right; 
+            background-position: center left;
+            background-position: center right;*/
+            background-position: center ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Border And Background in CSS.</h1>
+    <P id="firstpara">This is first paragraph.</P>
+    <P id="secondpara">This is second paragraph.</P>
+    <P id="thirdpara">This is third paragraph.</P>
+</body>
+</html>

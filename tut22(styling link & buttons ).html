@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psudo slectors & designing</title>
+    <style>
+        .container{
+            border: 6px solid darkgreen;
+            background-color: aquamarine;
+            padding: 34px;
+            margin: 30px auto;
+            width: auto;
+        }
+        .btn{
+            
+            background-color: rgb(233, 112, 112);
+            padding: 6px 6px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .link{
+            border: none;
+            cursor: pointer;
+            padding: 6px 6px;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        /* all these hover, active, visited, link are known as psudo selectors */
+        /* hover (giving some effects when cursor goes on that) */
+        a:hover{
+            color: rgb(0, 178, 248);
+        }
+
+        /* visited used for giving effect when it is visited once */
+        /* a:visited{
+            color: rgb(5, 51, 150);
+        } */
+        button:hover{
+            background-color: rgb(187, 2, 2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione temporibus nihil dicta, consequatur itaque iure vero, a enim libero voluptas, soluta minus odio aliquam repudiandae adipisci cumque cum. Ad quaerat obcaecati quae ipsam ab similique?</p>
+
+        <!-- a (anchor tag used to link something) -->
+        <a href="https://facebook.com" class="link">Facebook</a>
+        <button class="btn" type="button">Google</button>
+
+    </div>
+    
+</body>
+</html>

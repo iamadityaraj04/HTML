@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and time</title>
+
+    <style>
+        .container{
+            font-size: 20px;
+            background-color:paleturquoise ;
+            border: 2px solid red;
+            padding: 8px;
+            margin: 3px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        #time{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Time: 
+        <span id="time"></span>
+    </div>
+
+
+    <script>
+        function displayTime(){
+            timeDate=new Date();
+            document.getElementById('time').innerHTML=timeDate;
+        }
+        setInterval(displayTime,1);
+
+        // to display current date and time
+        let now= new Date();
+        console.log(now);
+
+        // here this time is just a reference
+        let date= new Date(0);
+        console.log(date);
+        // here it will show 1sec futher the time was in previous code 
+        let date1= new Date(1000);
+        console.log(date1);
+
+        // to generate a date
+        let date2= new Date("2025-01-04");
+        console.log(date2);
+
+        // another way to generate date is Date(years,month,date,hours,minutes,second,milisecond) and here month starts from 0
+        let date3= new Date(2040,0,4,8,45,56);
+        console.log(date3);
+
+        // to get year from given date
+        let getYear=date3.getFullYear();
+        console.log("Year: "+getYear);
+
+        // to get month from given date
+        let getMonth=date3.getMonth();
+        console.log("Month: "+getMonth);
+
+        // to get date from given date
+        let getDate=date3.getDate();
+        console.log("Date: "+getDate);
+
+        // to get hour from given date
+        let getHour=date3.getHours();
+        console.log("Hours: "+getHour);
+
+        // to get minute from given date
+        let getMinute=date3.getMinutes();
+        console.log("Minutes: "+getMinute);
+        
+        // to get second from given date
+        let getSecond=date3.getSeconds();
+        console.log("Seconds: "+getSecond);
+
+        // to update/set/change date (works with minutes, month, year etc too.)
+        date2.setDate(15);
+        console.log(date2);
+    </script>
+</body>
+</html>

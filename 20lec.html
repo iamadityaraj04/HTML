@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="">
+
+    <!-- <div>
+        Name: <input type="text" ng-model="name"> <br>
+        Hello! {{name}}
+    </div>
+    <br><br>
+    <div>
+        Num 1: <input type="number" ng-model="num1"> 
+        Num 2: <input type="number" ng-model="num2"> Sum = {{num1+num2}}
+    </div> -->
+
+    <div ng-init="cities=['Jalandhar', 'Amritsar', 'Ludhiana']">
+        <h1>Fill the form given below: </h1>
+        <input type="text" ng-model="name"> <br>
+        <h2 >Your name is: {{name}}</h2>
+        <h3>List of cities:</h3>
+        <ul>
+            <li ng-repeat="x in cities">
+                {{x}}
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

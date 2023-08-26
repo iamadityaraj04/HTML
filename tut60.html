@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<body>
+    <div class="container">
+        This page is for arrow function
+    </div>
+
+    <script>
+        // normal function creation
+        function greet(){
+            console.log("Normal way to create function");
+        }
+
+        // function creation using arrow key (=>)
+        let greet1=() =>{
+            console.log("using arrow key to create function");
+        }
+
+        // calling function
+        greet();
+        greet1();
+
+        // creating setTimeout function using arrow key
+        setTimeout(() => {
+            console.log("it is a setTimeout function");
+        }, 3000);
+
+        // function for returning value
+        let cal=(a)=>a/2;
+
+        // here both this refers to its object  
+        let obj1={
+            greeting:"Good Morning",
+            names: ["Aditya","Rohit","Alok","Himanshu","Sumit"],
+            speak(){
+                this.names.forEach((students)=>{
+                    console.log(this.greeting +" "+students);
+                });
+            }
+        }
+        obj1.speak();
+
+        // here inner this can not refer to object
+        let obj2={
+            greeting:"Good Morning",
+            names: ["Aditya","Rohit","Alok","Himanshu","Sumit"],
+            speak(){
+                this.names.forEach(function s (students){
+                    console.log(this.greeting +" "+students);
+                });
+            }
+        }
+        obj2.speak();
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar navbar'
+            'section content content content content'
+            'footer footer footer footer footer' ;
+        }
+        .box{
+            border: 2px solid brown;
+            background-color: blanchedalmond;
+            padding: 12px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #content{
+            grid-area: content;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="navbar">HOME SERVICES CONTACT US </div>
+        <div class="box" id="section">Lorem ipsum dolor, sit amet consectetur ipsum dolor sit amet consectetublanditiis.</div>
+        <div class="box" id="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque dicta pariatur, placeat velit facilis odit eius doloremque consectetur ullam! Fugiat neque nobis recusandae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis nisi maxime minus nesciunt, amet doloribus! Placeat, aliquam? Accusamus unde doloremque iste asperiores, vel itaque quia culpa, doloribus tenetur sequi beatae omnis eius quas fugiat. Ad dolore obcaecati expedita qui illum, a quis, impedit odit accusamus alias, dolores itaque voluptates provident. Reiciendis sed laborum hic alias ut dolorum reprehenderit quidem, nobis illo ipsa eum, deserunt magnam illum? Odit aperiam dolor fugit eius quibusdam quo beatae totam natus minima doloribus? Molestias asperiores recusandae doloribus libero minus aspernatur quis, nostrum reiciendis perspiciatis pariatur. Nihil, eaque fuga neque, similique dolorem exercitationem, ut eveniet enim cumque placeat rerum explicabo error rem. Sint, perferendis? Velit officia a repellendus debitis praesentium quasi, dignissimos nisi. Blanditiis ab laborum animi est amet iusto exercitationem dolor eum sit, in labore corporis vitae non atque consectetur, vero ratione voluptates molestiae. Iure alias non excepturi repellat nam deleniti? Mollitia quas, itaque facere labore ipsa illo nemo quaerat ratione non? Cumque hic nihil eius totam minus voluptate minima quibusdam impedit quas aperiam voluptatum dolore sit nesciunt a nulla, eos pariatur temporibus consequatur provident doloremque repudiandae ipsa eum voluptates! Veritatis mollitia fuga harum labore tenetur voluptates, repudiandae reiciendis incidunt eaque, quia numquam blanditiis minus!</div>
+        <div class="box" id="footer">footer</div>
+    </div>
+</body>
+</html>

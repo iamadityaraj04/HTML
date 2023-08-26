@@ -1,0 +1,105 @@
+<!--RGB color format
+(rgb)
+r :red
+g :green
+b :blue
+
+range  :0-255
+
+for red color   :rgb(255,0,0)
+for green color :rgb(0,255,0)
+for blue color  :rgb(0,0,255)
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            RGB color format
+        </title>
+    </head>
+    <body bgcolor="lightpink">
+        <p style="color: rgb(255,0,0);">
+            RED COLOR
+        </p>
+        <p style="color: rgb(0,255,0);">
+            GREEN COLOR
+        </p>
+        <p style="color: rgb(0,0,255);">
+            BLUE COLOR
+        </p>
+        <p style="color: rgb(0,255,255);">
+            SKY BLUE
+        </p>
+        <p style="color: rgb(255,255,0);">
+            YELLOW COLOR
+        </p>
+        <p style="color: rgb(0,0,0);">
+            BLACK COLOR
+        </p><br><br>
+
+<!--hexadecimal color format
+(#rrggbb)
+rr: red
+gg: green
+bb: blue
+
+range: 0-ff
+for red color   :#ff0000
+for green color :#00ff00
+for blue color  :#0000ff
+-->
+        <p style="color: #ff0000;">
+            RED COLOR
+        </p>
+        <p style="color: #00ff00;">
+            GREEN COLOR
+        </p>
+        <p style="color:#0000ff;">
+            BLUE COLOR
+        </p>
+        <p style="color: #00ffff;">
+            SKY BLUE
+        </p>
+        <p style="color:#ffff00;">
+            YELLOW COLOR
+        </p>
+        <p style="color: #000000">
+            BLACK COLOR
+        </p><br><br>
+
+
+<!--HSL color format
+(hsl)
+h: hue(shade of color)(range: 0-360 like angle, 0&360 will be of same color)
+s: saturation(0%: grey - 100%:full color)
+l: lightness(0%: black - 50%: natural color - 100%: white)  
+
+hsl(0-360,0%-100%,0%-100%)
+-->
+        <p style="color: hsl(0,100%,50%);">
+            RED COLOR
+        </p>
+        <p style="color: hsl(360,100%,50%);">
+            RED COLOR
+        </p>
+        <p style="color: hsl(120,100%,50%);">
+            GREEN COLOR
+        </p>
+        <p style="color: hsl(240,100%,50%);">
+            RED COLOR
+        </p>
+        <p style="color: hsl(240,0%,50%);">
+            GREY COLOR due to saturation is 0%.
+        </p>
+        <p style="color: hsl(240,100%,50%);">
+            FULL COLOR due to saturation is 100%.
+        </p>
+        <p style="color: hsl(240,100%,0%);">
+            BLACK COLOR due to lightness is 0%.
+        </p>
+        <p style="color: hsl(240,100%,100%);">
+            WHITE COLOR due to lightness is 100%.
+        </p>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class</title>
+        <style>
+            .abc{
+                text-align: center;
+                background-color: lightpink;
+                color: maroon;
+                margin: 1px;
+                border: 2px dashed black;
+            }
+            
+            .xyz{
+                text-align: left;
+                background-color: yellow;
+                color: maroon;
+            }
+            
+            #abc{
+                text-align: right;
+                background-color: skyblue;
+                color: darkgreen;
+            }   
+        </style>
+    </head>
+    <body>
+        <!-- <div> : devides into blocks-->
+        <h3><u>Using div</u></h3>  
+        <div class="abc">
+            <h1>Hello! Weclcome to geeksforgeeks. </h1>
+            <p>How are you?</p>
+        </div> 
+        <div class="abc">
+            <h2>What is your name?</h2>
+        </div>
+        <!--prints Aditya in next line -->
+        <h1>Hello! <div class="abc">Aditya</div> Welcome to geeksforgeeks.</h1>
+        <br><br>
+
+        <!-- <span> :-->
+        <h3><u>Using span</u></h3> 
+        <!--prints Aditya in same line-->   
+        <p>Hello! <span class="abc">Aditya</span>, Welcome to geeksforgeeks.</p> 
+        
+        <!--direct accessing of class-->
+        <p class="abc">What is your qualification?</p>
+        <p class="xyz">What is your qualification?</p>
+        
+        <!-- calling id-->
+        <h3><u>Using Id</u></h3> 
+        <p id="abc">Hello! Weclcome to geeksforgeeks.</p>
+    </body>
+</html>

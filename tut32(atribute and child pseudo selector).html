@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        .container{
+            display: block;
+            width: 300px;
+            margin: auto;
+        }
+
+        input{
+            display: block;
+        }
+
+        /* to target type attribute of input elament */
+        input[type='text']{
+            padding: 10px;
+            border: 2px solid rebeccapurple;
+            border-radius: 5px;
+        }
+
+        a[target]{
+            color: blueviolet;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: medium;
+        }
+
+        /* li:nth-child(1){
+            color: rgb(48, 108, 160);
+        } */
+
+        /* it will count n=0 to last element */
+        /* li:nth-child(2n){
+            color: rgb(253, 66, 66);
+        } */
+
+        /* for even */
+        /* li:nth-child(even){
+            color: rgb(253, 66, 66);
+        } */
+
+        /* for odd */
+        li:nth-child(odd){
+            color: rgb(253, 66, 66);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Google</a></h1>
+        <h1><a href="http://facebook.com" >Facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Username">
+            <input type="email" placeholder="Email Id">
+            <input type="password" placeholder="Password">
+            <input type="submit" placeholder="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">Item1</li>
+            <li class="item" id="item2">Item2</li>
+            <li class="item" id="item3">Item3</li>
+            <li class="item" id="item4">Item4</li>
+        </ul>
+    </div>
+</body>
+</html>

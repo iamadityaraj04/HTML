@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 200px;
+            height: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h3 id="date"></h3>
+    <button id="start" onclick="start()">START</button>
+    <button id="stop" onclick="stop()">STOP</button>
+
+    <script>
+        var a;
+        function start() {
+            a=setInterval(display,1);
+        }
+        function display() {
+            document.getElementById("date").innerHTML=Date();
+        }
+        function stop() {
+           clearInterval(a); 
+        }
+    </script>
+</body>
+</html>

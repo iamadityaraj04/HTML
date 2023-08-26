@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interaction of user </title>
+</head>
+<body>
+    <div>
+        this is blank page.
+    </div>
+
+
+    <script>
+        //alert is used to give alert popup in the webpage
+        //alert("This is a alert message.");
+
+        //promt window is work like alert but also take input
+        //here guest is the default value of the text box
+        // let name= prompt("Enter Your Name", "Guest");
+        // console.log(name);
+
+        //confirm window used to take confirmation from the user
+        let confirmation= confirm("Do you really want to delete it?");
+        console.log(confirmation);
+        if(confirmation){
+            //code for deleting message
+            console.log("This message is deleted.");
+        }
+        else{
+            //code for cancel deletion
+            console.log("This message is not deleted.")
+        }
+    </script>
+</body>
+</html>

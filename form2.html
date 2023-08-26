@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+</head>
+<body>
+    <h2>Form2</h2>
+    <form action="backend.php">
+        <!--label is used so that if we click on "Name" box will get automatically selected-->
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            Roll: <input type="number" name="myRoll" >
+        </div>
+        <br>
+        <div>
+            Reg. No. : <input type="text" name="myregno">
+        </div>
+        <br>
+        <div>
+            Email: <input type="text" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="myDate" >
+        </div>
+        <br>
+        <!--for checkbox-->
+        <div>
+            Are you eligible? <input type="checkbox" name="myCheckbox">
+        </div>
+        <br>
+        <!--for radiobutton-->
+        <div>
+            Interesting? <br>
+            yes<input type="radio" name="myRadiobutton">
+            no<input type="radio" name="myRadiobutton">
+        </div>
+        <br>
+        <!--for writing paragraph-->
+        <div>
+            Write about yourself: <br><textarea name="myText" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Select Car: </label>
+            <select name="myCar" id="car">
+                <option value="ind">Indica</option>
+                <option value="sft">Swift</option>
+                <!--if selected is written then altroz will be selected by default-->
+                <option value="alt" selected>Altroz</option>
+            </select>
+        </div>
+        <br>
+        <!--buttons are made-->
+        <div>
+            <input type="submit" value="SUBMIT NOW">
+            <input type="reset" value="RESET">
+        </div>
+    </form>
+</body>
+</html>

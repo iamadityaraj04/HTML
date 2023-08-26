@@ -1,0 +1,120 @@
+<!-- Lists
+ *Types of lists 
+
+1. Unorderd List  <ul> (using of bullets, star etc.)
+2. Ordered List <ol> (using num., alphabets etc.)
+3. Description List (writing description of the item given in list) 
+<li> : define items of list
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lists
+        </title>
+    </head>    
+        <body>
+            <h2>Drinks</h2>
+            
+            <!-- unordered list (in ul dot is by default)-->
+            <ul>
+                <li>coffee</li>
+                <li>water</li>
+                <li>tea</li>
+                <li>cold drink</li>
+            </ul>
+            <h2>Drinks</h2>
+            <ul style="list-style-type: circle;">
+                <li>coffee</li>
+                <li>water</li>
+                <li>tea</li>
+                <li>cold drink</li>
+            </ul>
+
+            <!-- nested ul-->
+            <ul>
+                <li>coffee
+                    <ul>
+                        <li>with sugar</li>
+                        <li>without sugar</li>
+                    </ul>
+                </li>
+                <li>water
+                    <ul>
+                        <li>warm</li>
+                        <li>chilled</li>
+                    </ul>
+                </li>
+                <li>tea
+                    <ul>
+                        <li>with sugar</li>
+                        <li>without sugar</li>
+                    </ul>
+                </li>
+                <li>cold drink</li>
+            </ul>
+
+            <!-- ordered list (in ol num. is default)-->
+            <!-- nested ol-->
+            <h2>Drinks</h2>
+            <ol>
+                <li>coffee
+                    <ol type="A">
+                        <li>with sugar</li>
+                        <li>without sugar</li>
+                    </ol>
+                </li>
+                <li>water</li>
+                <li>tea
+                    <ol type="I">
+                        <li>with sugar</li>
+                        <li>without sugar</li>
+                    </ol>
+                </li>
+
+                <li>cold drink</li>
+            </ol>
+
+            <h2>Drinks</h2>
+            <ol style="list-style-type: upper-alpha;">
+                <li>coffee</li>
+                <li>water</li>
+                <li>tea</li>
+                <li>cold drink</li>
+            </ol>
+
+            <!-- type att. : gives type of numbering -->
+            <ol type="I">
+                <li>coffee</li>
+                <li>water</li>
+                <li>tea</li>
+                <li>cold drink</li>
+            </ol>
+
+            <!-- start att. : starts from that no.-->
+            <ol start="91">
+                <li>coffee</li>
+                <li>water</li>
+                <li>tea</li>
+                <li>cold drink</li>
+            </ol>
+
+
+            <!-- description list-->
+            <!-- <dl> : description list-->
+            <!-- <dt> : description term-->
+            <!-- <dd> : description data-->
+            <dl>
+                <dt>INTRODUCTION</dt>
+                <dd>
+                    My name is Aditya Raj.
+                </dd>
+                <dt>Qualification</dt>
+                <dd>
+                    Currently i am pursuing B.Tech in CSE from Lovely Professional University.
+                </dd>    
+            </dl>
+            <!-- nesting can be done using all three list.-->
+        </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        /* CSS position: static(default), relative, absolute, sticky, fixed */
+        .box{
+            /* inline block is used to print in one row */
+            display: inline-block;
+            border: 3px solid rgb(233, 50, 50);
+            width: 200px;
+            height: 200px;
+            margin: 2px;
+        }
+        #box3{
+            /* in relative we can use top,bottom,left,right  property (also leave gap in its old position) */
+            /* position: relative;*/
+
+            /* we can use all property same as relative but it do not leave gap in its old position */
+            /* position: absolute;
+            top: 30px;
+            left: 30px; */
+
+            /* in fixed box fixed at a position and when we scroll page scroll but box remains at same place on the screen */
+            /* position: fixed;
+            right: 10px; */
+
+            /* used to make menu bar which will stick at the top */
+            position: sticky;
+            top: 5px;
+
+        }
+        .container{
+            border: 2px solid black;
+            background-color: khaki;
+            height: 10000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+    </div>      
+    </body>
+</html>
